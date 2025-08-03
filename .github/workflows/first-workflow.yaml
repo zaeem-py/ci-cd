@@ -35,6 +35,7 @@ jobs:
       run: echo " donee "
   extra:
       runs-on: ubuntu-latest
+      needs: test
       steps:
       - name: Show current directory before checkout
         run: |
@@ -45,4 +46,8 @@ jobs:
       - name: Show current directory after checkout
         run: pwd
       - name: List files
-        run: ls
+        run: |
+          ls
+          cd ./ci-cd
+          pwd
+          ls -l

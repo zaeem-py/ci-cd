@@ -11,6 +11,6 @@ jobs:
       - name: WorkFLow end
         run: echo " job completed"
       - name: instaling node packges 
-        run: echo " instalation complete "
+        run: e " instalation complete "
       
       

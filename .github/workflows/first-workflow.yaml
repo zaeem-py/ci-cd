@@ -51,6 +51,7 @@ jobs:
       run: npm ci 
     - name: run server 
       run: npm run dev
+    - name: job done
       run: echo " donee "
       
       

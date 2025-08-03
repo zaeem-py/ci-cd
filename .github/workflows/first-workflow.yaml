@@ -12,42 +12,20 @@ jobs:
         run: echo " job completed"
       - name: instaling node packges 
         run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
+      - name: runing test
+        run: echo " test successfull"
+
   build:
     runs-on: ubuntu-latest
     needs: test
     steps:
     - name: cloning repo 
-      uses: actions/checkout@v3 # checkouts current repo/clone repo 
+      run: |
+        echo "clonning ..."
+        echo "${{toJson(github)}}"
+        git clone "https://github.com/${{github.repository}}.git"
+        echo "clonign completed"
+      # uses: actions/checkout@v3 # checkouts current repo/clone repo 
     - name: npm installing
       run: npm ci 
     - name: run server 

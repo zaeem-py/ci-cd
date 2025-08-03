@@ -19,18 +19,19 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     steps:
-    - name: cloning repo 
-      run: |
-        echo "clonning ..."
-        echo "${{toJson(github)}}"
-        git clone "https://github.com/${{github.repository}}.git"
-        echo "clonign completed"
-      # uses: actions/checkout@v3 # checkouts current repo/clone repo 
+    - name: Show current directory before checkout
+      run: pwd
+    - name: Checkout repo
+      uses: actions/checkout@v3
+    - name: Show current directory after checkout
+      run: pwd
+    - name: List files
+      run: ls
     - name: npm installing
       run: npm ci 
     - name: run server 
       run: echo " run server "
     - name: job done
       run: echo " donee "
-      
-      
+
+

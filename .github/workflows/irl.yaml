@@ -12,5 +12,5 @@ jobs:
       run: npm ci 
     - name: run server 
       run: npm run dev
-      run: echo " done "
+      run: echo " donee "
 

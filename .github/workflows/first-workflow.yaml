@@ -11,6 +11,40 @@ jobs:
       - name: WorkFLow end
         run: echo " job completed"
       - name: instaling node packges 
-        run: e " instalation complete "
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
+      - name: instaling node packges 
+        run: echo " instalation complete "
       
       

@@ -28,7 +28,7 @@ jobs:
     - name: List files
       run: ls
     - name: npm installing
-      run: npm ci 
+      run: echo "npm ci"
     - name: run server 
       run: echo " run server "
     - name: job done
@@ -50,3 +50,5 @@ jobs:
       - name: List files
         run: |
           ls -l
+      - name: installing node_modules
+        run: npm ci

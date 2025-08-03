@@ -42,9 +42,15 @@ jobs:
         run: echo " instalation complete "
       - name: instaling node packges 
         run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
-      - name: instaling node packges 
-        run: echo " instalation complete "
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: cloning repo 
+      uses: actions/checkout@v3 # checkouts current repo/clone repo 
+    - name: npm installing
+      run: npm ci 
+    - name: run server 
+      run: npm run dev
+      run: echo " donee "
       
       

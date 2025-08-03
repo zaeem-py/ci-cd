@@ -42,7 +42,9 @@ jobs:
           pwd
           ls -l
       - name: cloning repo
-        run: git clone "https://github.com/${{github.repository}}.git"
+        run: | 
+          cd ..
+          git clone "https://github.com/${{github.repository}}.git"
       - name: Show current directory after checkout
         run: pwd
       - name: List files

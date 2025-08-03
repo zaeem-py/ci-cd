@@ -1,0 +1,7 @@
+    # - name: cloning repo 
+    #   run: |
+    #     echo "clonning ..."
+    #     echo "${{toJson(github)}}"
+    #     git clone "https://github.com/${{github.repository}}.git"
+    #     echo "clonign completed"
+    #   uses: actions/checkout@v3 # checkouts current repo/clone repo 

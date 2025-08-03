@@ -1,0 +1,14 @@
+name: Hello World 
+
+on: [push,workflow_dispatch]
+
+jobs:
+  Greeting:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: print hello
+        run: echo "hello World"
+      - name: WorkFLow end
+        run: echo " job completed"
+      
+      
